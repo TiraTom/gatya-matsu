@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  target_year: 1
+  budget: 1
+  use: 1
+  memo: MyText
+
+two:
+  target_year: 1
+  budget: 1
+  use: 1
+  memo: MyText

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  accepted_flag: false
+  review: MyText
+  memo: MyText
+  act_date: 2018-05-31
+  flag_date: 2018-05-31
+
+two:
+  accepted_flag: false
+  review: MyText
+  memo: MyText
+  act_date: 2018-05-31
+  flag_date: 2018-05-31
