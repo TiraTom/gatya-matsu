@@ -1,0 +1,2 @@
+class ActivityStatusesController < ApplicationController
+end
