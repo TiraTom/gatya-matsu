@@ -21,7 +21,19 @@
 　[]activity_status
   []budget
 
-[]CRUD機能の作成
+[]こまごま
+　[]モデルへのvalidation追加
+  []useのデフォルト値を0にする
+  []acitivity登録成功メッセージを表示させる
+
+
+[]CREATE
+　[]activity
+　[]activity_status
+　[]user
+　[]budget
+
+[]UPDATE
 　[]activity
 　[]activity_status
 　[]user

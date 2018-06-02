@@ -1,45 +1,47 @@
-アクティビティトップ
+<h2>アクティビティトップ</h2>
 
   <%= link_to "新しいアクティビティを登録",  new_activity_path, class: "btn btn-default" %>
 
-  <table>
-    <tr>
-      <th>
-        アクティビティ名
-      </th>
-      <th>
-        運動レベル
-      </th>
-      <th>
-        費用
-      </th>
-      <th>
-        所要時間
-      </th>
-      <th>
-      </th>
-    </tr>
-    <tr>
-      <% if @activity.empty? %>
-        登録されているアクティビティはありません
-      <% else %>
+  <% if @activities.nil? %>
+    <h5>
+      登録されているアクティビティはありません
+    </h5>
+  <% else %>
+    <table>
+      <tr>
+        <th>
+          アクティビティ名
+        </th>
+        <th>
+          運動レベル
+        </th>
+        <th>
+          費用
+        </th>
+        <th>
+          所要時間
+        </th>
+        <th>
+        </th>
+      </tr>
+      <tr>
         <% @activities.each do |activity| %>
-        <td>
-          <%= activity.activity_name %>
-        </td>
-        <td>
-          <%= activity.activity_level %>
-        </td>
-        <td>
-          <%= activity.activity_price %>
-        </td>
-        <td>
-          <%= activity.activity_time %>
-        </td>
-        <td>
-          <%= link_to edit_acitivity_path, class: "btn btn-default" %>
-        </td>
-      <% end %>
-    </tr>
-  </table>
+          <td>
+            <%= activity.activity_name %>
+          </td>
+          <td>
+            <%= activity.activity_level %>
+          </td>
+          <td>
+            <%= activity.activity_price %>
+          </td>
+          <td>
+            <%= activity.activity_time %>
+          </td>
+          <td>
+            <%= link_to "編集", edit_activity_path, class: "btn btn-default" %>
+          </td>
+        <% end %>
+      </tr>
+    </table>
 <% end %>
