@@ -4,12 +4,12 @@ one:
   accepted_flag: false
   review: MyText
   memo: MyText
-  act_date: 2018-05-31
-  flag_date: 2018-05-31
+  act_date: 2018-06-02
+  flag_date: 2018-06-02
 
 two:
   accepted_flag: false
   review: MyText
   memo: MyText
-  act_date: 2018-05-31
-  flag_date: 2018-05-31
+  act_date: 2018-06-02
+  flag_date: 2018-06-02

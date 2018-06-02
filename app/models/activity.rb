@@ -1,3 +1,3 @@
 class Activity < ApplicationRecord
-  has_many :users, through :activity_status
+  has_many :users, through: :activity_status
 end
