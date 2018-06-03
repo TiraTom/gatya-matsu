@@ -1,40 +1,23 @@
 手順メモ
 
 ====================================
-[o]モデルの作成
-　[p]activity
-　[o]activity_status
-　[o]user
-  [o]budget
-
-[o]モデルの関係性の追記（has_manyとか）
-
-[o]routing
-
-[o]コントローラーの作成
-　[o]activity
-　[o]activity_status
-  [o]budget
-
-[]ビューの作成
-　[]activity
-　[]activity_status
-  []budget
-
 []こまごま
+  []成功メッセージ(flash系)がでない・表示タイミングがおかしい
 　[]モデルへのvalidation追加
   []useのデフォルト値を0にする
   []acitivity登録成功メッセージを表示させる
-
+　[]レイアウトの修正
+  []日本語化
+  []アクティビティ並び替え機能
 
 []CREATE
-　[]activity
+　[o]activity
 　[]activity_status
 　[]user
 　[]budget
 
 []UPDATE
-　[]activity
+　[o]activity
 　[]activity_status
 　[]user
 　[]budget

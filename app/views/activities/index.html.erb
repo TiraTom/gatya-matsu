@@ -1,5 +1,10 @@
 <h2>アクティビティトップ</h2>
 
+<div>
+  <% flash[:notice] %>
+  <% flash[:alert] %>
+</div>
+
   <%= link_to "新しいアクティビティを登録",  new_activity_path, class: "btn btn-default" %>
 
   <% if @activities.nil? %>
@@ -24,8 +29,8 @@
         <th>
         </th>
       </tr>
-      <tr>
-        <% @activities.each do |activity| %>
+      <% @activities.each do |activity| %>
+        <tr>
           <td>
             <%= activity.activity_name %>
           </td>
@@ -39,9 +44,9 @@
             <%= activity.activity_time %>
           </td>
           <td>
-            <%= link_to "編集", edit_activity_path, class: "btn btn-default" %>
+            <%= link_to "編集", edit_activity_path(activity), class: "btn btn-default" %>
           </td>
-        <% end %>
-      </tr>
+        </tr>
+      <% end %>
     </table>
 <% end %>
