@@ -17,12 +17,11 @@
 　[o]登録項目の追加（名前とか）
 　[o]メッセージの日本語化
 　[o]各ページのログイン状態チェックメソッドの追加
-　[]登録情報編集機能作成
 
 []CREATE
 　[o]activity
 　[]activity_status
-　[]budget
+　[着手中]budget
 
 []UPDATE
 　[o]activity

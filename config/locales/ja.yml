@@ -3,7 +3,11 @@ ja:
   activerecord:
     attributes:
       activit_status:
-
+        accepted_flag: 受諾フラグ
+        review: レビュー
+        memo: 備考
+        act_date: 実行日
+        flag_date: 受諾日
       activity:
         activity_name: アクティビティ名
         activity_level: 活動レベル
@@ -11,8 +15,11 @@ ja:
         activity_time: 所要時間
       budget:
         budget: 予算
-
+        target_year: 対象年
+        use: 使用額
+        memo: 備考
       user:
+        user_name: ユーザー名
     errors:
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"

@@ -1,0 +1,12 @@
+<h2>予算登録</h2>
+
+<%= form_for(@budget) do |f| %>
+  <div class="form-group">
+    <%= f.label :target_year %>
+    <%= f.number_field :target_year, class: "form-control" %>
+    <%= f.label :budget %>
+    <%= f.number_field :budget, class: "form-control" %>
+  </div>
+  <%= f.submit class: "btn btn-default" %>
+  <%= link_to "戻る", budget_path, class: "btn btn-default" %>
+<% end %>
