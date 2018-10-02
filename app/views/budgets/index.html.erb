@@ -1,6 +1,14 @@
 <h2>マイページ</h2>
-<!--<h5><%= @budget[0].year %></h5>
-#<h4><%= @budget[0].budget - @budget[0].use %></h4>
--->
+
+<% @budgets.each do |budget| %>
+  <%= budget.year %>
+  <%= budget.budget %>
+<% end %>
+<%
+=begin %>
+<h5><%= @budget[0].year %></h5>
+<h4><%= @budget[0].budget - @budget[0].use %></h4>
+<%
+=end %>
 
 <%= link_to "今年の予算を登録", new_budget_path %>

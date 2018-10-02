@@ -12,10 +12,10 @@ class ActivitiesController < ApplicationController
     if activity.valid?
       if activity.save
         flash[:notice] = "登録が完了しました"
-        redirect_to action: "index"
       else
         flash[:alert] = "登録に失敗しました。管理者に連絡してください"
       end
+      redirect_to action: "index"
     end
   end
 
@@ -31,6 +31,7 @@ class ActivitiesController < ApplicationController
       else
         flash[:alert] = "更新に失敗しました。管理者に連絡してください"
       end
+      redirecto_to action: "index"
     end
   end
 
