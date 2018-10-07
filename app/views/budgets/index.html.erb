@@ -1,14 +1,18 @@
 <h2>マイページ</h2>
 
-<% @budgets.each do |budget| %>
-  <%= budget.year %>
-  <%= budget.budget %>
-<% end %>
-<%
-=begin %>
-<h5><%= @budget[0].year %></h5>
-<h4><%= @budget[0].budget - @budget[0].use %></h4>
-<%
-=end %>
 
+  <table>
+    <tr>
+      <th>対象年度</th>
+      <th>予算額</th>
+      <th>残り予算</th>
+    </tr>
+    <% @budgets.each do |budget| %>
+      <tr>
+        <td><%= budget.target_year %></td>
+        <td><%= budget.budget %></td>
+      </tr>
+    <% end %>
+  </table>
+<br>
 <%= link_to "今年の予算を登録", new_budget_path %>

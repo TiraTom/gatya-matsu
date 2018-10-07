@@ -1,6 +1,5 @@
 class BudgetsController < ApplicationController
   def index
-    byebug
     @budgets = Budget.where(user_id: current_user.id)
   end
 
@@ -9,7 +8,6 @@ class BudgetsController < ApplicationController
   end
 
   def create
-    byebug
     budget = Budget.new(budget_params)
     budget.user_id = current_user.id
     byebug
